@@ -9,7 +9,7 @@ const WelcomeSection: React.FC = () => {
   return (
     <Hero>
       <ImageContainer>
-        <LogoImage src="assets/white_on_trans.png" alt="Felix Logo" />
+        <LogoImage src="assets/Felix.png" alt="Felix Logo" />
         {/* Social links for desktop view */}
         <SocialLinks className="desktop-only">
           <SocialLink
@@ -131,6 +131,8 @@ const LogoImage = styled.img`
   height: auto;
   max-width: 80%; // Adjust size of the logo
   filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.6));
+  border-radius: 15%;
+  margin-top: -10rem;
 
   @media (max-width: 768px) {
     max-width: 100%;
@@ -138,7 +140,7 @@ const LogoImage = styled.img`
 `;
 
 const SocialLinks = styled.div`
-  margin-top: 1rem;
+  margin-top: 3rem;
   display: flex;
   gap: 1rem; // Add space between links
 
